@@ -1,48 +1,134 @@
 /* zeroing */
 *,
 *::before,
-*::after{
+*::after {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul,
-ol,
-li{
+ul, ol, li {
     list-style: none;
 }
 
-img{
+img {
     vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
+h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
     font-size: inherit;
-
 }
 
-html,
-body{
+html, body {
     height: 100%;
     line-height: 1;
-    font-size: 16px;
-    color: #000;
+    font-size: 14px;
+    color: #252B42;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
 }
 
-.wrapper{
+.wrapper {
     min-height: 100%;
     overflow: hidden;
 }
-/* zeroing */
+
+/* zeroing end */
+
+/*-----------------------------------------------------------------------------------------------*/
+._container {
+    max-width: 1076px;
+    margin: 0 auto; /* will center */
+    padding: 0 15px;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------HEADER START--------------------------------------------*/
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header-container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+
+@media (max-width: 479px) {
+    .header-container {
+        min-height: 70px;
+    }
+
+    .header-menu{
+        margin: 0 0 0 20px;
+    }
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #252B42;
+}
+
+.menu {
+    padding: 5px 0;
+}
+
+.header-menu {
+    margin: 0 0 0 133px;
+}
+
+/* tablet screen mode */
+@media (max-width: 992px) {
+    .header-menu {
+        margin: 0 0 0 80px;
+    }
+}
+
+/* tablet screen mode */
+@media (max-width: 768px) {
+    .header-menu {
+        margin: 0 0 0 40px;
+    }
+}
+
+.menu-list {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 21px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-link {
+    color: #737373;
+    font-weight: 600;
+    line-height: 171%; /* or we can do example for 24px: calc(24 / 14 * 100%)*/
+}
+
+@media (max-width: 479px) {
+    .menu-link {
+        font-size: 16px;
+    }
+}
+
+
+/*----------------------------------------HEADER END------------------------------------------------*/
+
+
