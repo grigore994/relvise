@@ -155,6 +155,12 @@ html, body {
 
 }
 
+.page-services {
+    margin-top: -111px;
+    position: relative;
+    z-index:2;
+}
+
 /*---------------------------------------PAGE END---------------------------------------------------------------------*/
 
 
@@ -226,7 +232,7 @@ html, body {
 }
 
 @media (max-width: 400px) {
-    .main-block-button{
+    .main-block-button {
         flex: 1 1 auto;
         margin-bottom: 10px;
     }
@@ -266,6 +272,95 @@ html, body {
         opacity: 0.5;
     }
 }
+
+/*---------------------------------------SECTION SERVICES START---------------------------------------------------------------------*/
+
+.services {
+}
+
+.services-container {
+}
+
+.services-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+@media (max-width: 992px) {
+    .services-body{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .services-body{
+        justify-content: center;
+    }
+}
+
+.services-column {
+    padding: 0 15px;
+    flex: 0 1 33.333%;
+}
+
+@media (max-width: 992px) {
+    .services-column{
+        flex: 0 1 50%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 570px) {
+    .services-column{
+        flex: 0 1 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.services-item {
+    /* SHADOW */
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    background: #FFFFFF;
+    padding: 35px;
+    height: 100%;
+}
+
+.item-service {
+
+}
+
+.item-service-green{
+    background-color: #0D5C63;
+}
+.item-service-green .item-service-title {
+   color: #FFFFFF;
+}
+
+.item-service-green .item-service-text{
+    color: #FFFFFF;
+}
+
+.item-service-icon {
+}
+
+.item-service-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 133%;
+    letter-spacing: 0.10000000149011612px;
+    margin-top: 10px;
+}
+
+.item-service-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 143%;
+    color: #737373;
+    letter-spacing: 0.20000000298023224px;
+    margin-top: 10px;
+}
+/*---------------------------------------SECTION SERVICES END---------------------------------------------------------------------*/
 
 /*---------------------------------------MAIN END---------------------------------------------------------------------*/
 
