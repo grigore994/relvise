@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html, body {
+    background-color: #FAFAFA;
     height: 100%;
     line-height: 1;
     font-size: 14px;
@@ -158,13 +159,47 @@ html, body {
 .page-services {
     margin-top: -111px;
     position: relative;
-    z-index:2;
+    z-index: 2;
+}
+
+.page-advantages {
+    background-color: #FAFAFA;
 }
 
 /*---------------------------------------PAGE END---------------------------------------------------------------------*/
 
 
-/*---------------------------------------MAIN START---------------------------------------------------------------------*/
+/*---------------------------------------HEADER-BLOCK(used in multiply sections)--------------------------------------*/
+.header-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-block-title {
+    color: #252B42;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+}
+
+.header-block-sub-title {
+    color: #737373;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    min-width: 470px;
+    max-width: 511px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------MAIN START-------------------------------------------------------------------*/
 .main-block {
     position: relative;
 }
@@ -288,13 +323,13 @@ html, body {
 }
 
 @media (max-width: 992px) {
-    .services-body{
+    .services-body {
         justify-content: center;
     }
 }
 
 @media (max-width: 570px) {
-    .services-body{
+    .services-body {
         justify-content: center;
     }
 }
@@ -305,14 +340,14 @@ html, body {
 }
 
 @media (max-width: 992px) {
-    .services-column{
+    .services-column {
         flex: 0 1 50%;
         margin-bottom: 15px;
     }
 }
 
 @media (max-width: 570px) {
-    .services-column{
+    .services-column {
         flex: 0 1 100%;
         margin-bottom: 15px;
     }
@@ -330,14 +365,15 @@ html, body {
 
 }
 
-.item-service-green{
+.item-service-green {
     background-color: #0D5C63;
 }
+
 .item-service-green .item-service-title {
-   color: #FFFFFF;
+    color: #FFFFFF;
 }
 
-.item-service-green .item-service-text{
+.item-service-green .item-service-text {
     color: #FFFFFF;
 }
 
@@ -348,7 +384,7 @@ html, body {
     font-size: 24px;
     font-weight: 700;
     line-height: 133%;
-    letter-spacing: 0.10000000149011612px;
+    letter-spacing: 0.1px;
     margin-top: 10px;
 }
 
@@ -357,10 +393,75 @@ html, body {
     font-weight: 500;
     line-height: 143%;
     color: #737373;
-    letter-spacing: 0.20000000298023224px;
+    letter-spacing: 0.2px;
     margin-top: 10px;
 }
+
 /*---------------------------------------SECTION SERVICES END---------------------------------------------------------------------*/
+
+/*---------------------------------------SECTION ADVANTAGES START---------------------------------------------------------------------*/
+
+.advantages {
+    padding: 80px 0;
+}
+
+.advantages-container {
+}
+
+.advantages-header {
+}
+
+.advantages-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.advantage-column {
+    /* SHADOW */
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+    flex: 0 1 25%;
+}
+
+.advantage-column:not(:last-child){
+    margin-right: 30px;
+}
+
+.advantage-item{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    height: 100%;
+}
+
+.advantage-icon {
+    margin-bottom: 10px;
+}
+
+.advantage-value {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 10px;
+}
+
+.advantage-text {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: center;
+
+}
+
+/*---------------------------------------SECTION ADVANTAGES END---------------------------------------------------------------------*/
 
 /*---------------------------------------MAIN END---------------------------------------------------------------------*/
 
