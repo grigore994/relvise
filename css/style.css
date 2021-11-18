@@ -178,6 +178,11 @@ html, body {
 
 }
 
+.page-subscribe {
+    height: 100%;
+    background: linear-gradient(180deg, #FAFAFA 50%, #252B42 50%);
+}
+
 /*---------------------------------------PAGE END---------------------------------------------------------------------*/
 
 
@@ -811,13 +816,84 @@ html, body {
         justify-content: center;
     }
 }
+
 /*---------------------------------------SECTION CLIENTS END----------------------------------------------------------*/
 
+/*---------------------------------------SECTION SUBSCRIBE START------------------------------------------------------*/
+.subscribe {
 
-/*---------------------------------------MAIN END---------------------------------------------------------------------*/
+}
 
+.subscribe-container {
+    padding: 20px 32px;
+}
 
-/*---------------------------------------FOOTER START-----------------------------------------------------------------*/
+.subscribe-body {
+    background-color: #17213C;
+    display: flex;
+}
+
+.subscriber-content{
+    position: relative;
+    display: flex;
+    padding: 30px 50px;
+    flex: 0 1 100%;
+    /*align-items: center;*/
+}
+
+.subscribe-title {
+    flex: 0 1 50%;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #FFFFFF;
+    padding-right: 180px;
+}
+
+.subscriber-data-input{
+    display: flex;
+    flex: 0 1 50%;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    /*bottom: 30px;*/
+}
+
+.subscriber-data-input input{
+    width: 333px;
+    height: 58px;
+    background-color: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px 0 0 5px;
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*font-size: 14px;*/
+    /*line-height: 200%;*/
+    /*letter-spacing: 0.2px;*/
+    /*color: #737373;*/
+    text-indent: 20px;
+}
+
+.subscriber-data-input button {
+    width: 117px;
+    height: 58px;
+    border-radius: 0 5px 5px 0;
+    background: #FF7B47;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+    /*---------------------------------------SECTION SUBSCRIBE END--------------------------------------------------------*/
+    /*---------------------------------------MAIN END---------------------------------------------------------------------*/
+    /*---------------------------------------FOOTER START-----------------------------------------------------------------*/
 .footer {
 
 }
