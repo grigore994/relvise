@@ -593,8 +593,167 @@ html, body {
 /*---------------------------------------SECTION ADVICES END----------------------------------------------------------*/
 
 /*---------------------------------------SECTION WHO-WE-ARE START---------------------------------------------------------*/
+.whoWeAre {
+    padding: 100px 0 144px 0;
+}
+
+@media (max-width:600px){
+    .whoWeAre{
+        padding: 30px 0 35px 0;
+    }
+}
+
+.whoWeAre-container {
+}
+
 .whoWeAre-header {
-    padding: 100px 0;
+    padding-bottom: 100px;
+}
+
+@media (max-width:600px){
+    .whoWeAre-header {
+        padding-bottom: 30px;
+    }
+}
+
+.who-we-are-body {
+    display: flex;
+    /*flex: 0 1 50%*/
+}
+
+@media (max-width: 600px) {
+    .who-we-are-body {
+        flex-direction: column;
+    }
+}
+
+.whoWeAre-video-container {
+    flex: 0 0 57%;
+    position: relative;
+    padding: 0 0 42.25% 0;
+}
+
+@media (max-width: 768px) {
+    .whoWeAre-video-container {
+        flex: 0 0 45%;
+        padding: 0 0 42.25% 0;
+        margin-bottom: 15px;
+    }
+}
+
+.whoWeAre-video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.whoWeAre-content-container {
+    flex: 1 1 auto;
+    padding-left: 120px;
+}
+
+@media (max-width: 900px) {
+    .whoWeAre-content-container {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width:600px) {
+    .whoWeAre-content-container {
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.whoWeAre-title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #252B42;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .whoWeAre-title {
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .whoWeAre-title {
+        text-align: center;
+    }
+}
+
+.whoWeAre-text {
+    padding-bottom: 20px;
+    color: #737373;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .whoWeAre-text {
+        padding: 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .whoWeAre-text {
+        text-align: center;
+    }
+}
+
+.whoWeAre-items-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.whoWeAre-item {
+    display: flex;
+    padding-top: 30px;
+}
+
+.item-whoWeAre-icon {
+    padding-right: 20px;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.item-whoWeAre-body {
+}
+
+.item-whoWeAre-title {
+    color: #252B42;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+
+.item-whoWeAre-text {
+    color: #737373;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    text-align: left;
+
 }
 
 /*---------------------------------------SECTION WHO-WE-ARE END----------------------------------------------------------*/
