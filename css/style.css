@@ -183,6 +183,10 @@ html, body {
     background: linear-gradient(180deg, #FAFAFA 50%, #252B42 50%);
 }
 
+.page-contacts {
+
+}
+
 /*---------------------------------------PAGE END---------------------------------------------------------------------*/
 
 
@@ -936,18 +940,103 @@ html, body {
         flex-direction: column;
     }
 
-    .subscriber-data-input input{
+    .subscriber-data-input input {
         border-radius: 5px;
-        margin-bottom:5px;
+        margin-bottom: 5px;
     }
 
-    .subscriber-data-input button{
+    .subscriber-data-input button {
         border-radius: 7px;
         width: 100%;
     }
 }
 
 /*---------------------------------------SECTION SUBSCRIBE END--------------------------------------------------------*/
+
+
+/*---------------------------------------SECTION CONTACTS START--------------------------------------------------------*/
+.contacts {
+    padding: 80px 0 150px 0;
+}
+
+.contacts-container {
+}
+
+.contacts-header {
+    /*padding: 0 90px 0 90px;*/
+}
+
+.contacts-body {
+    /*margin-top: 80px;*/
+}
+
+.contacts-list {
+    margin: 80px 30px 0 30px;
+    display: flex;
+}
+
+.contacts-list-item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 33.3333%;
+    background-color: #FFFFFF;
+    align-items: center;
+    margin: 0 10px;
+}
+
+/*.contacts-list-item:hover{*/
+/*    background-color: #252B42;*/
+/*}*/
+
+.contacts-list-item-icon {
+    margin: 50px 0 15px 0;
+    font-size: 72px;
+    color: #0D5C63;
+    /*background: #FFFFFF;*/
+}
+
+/*.contacts-list-item-icon:hover {*/
+/*    color: #FFFFFF;*/
+/*}*/
+
+.contacts-list-item-info {
+    margin-bottom: 15px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.contacts-list-item-text {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.contacts-list-item-button {
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FF7B47;
+    padding: 10px 20px;
+    min-height: 44px;
+    border: 1px solid #FF7B47;
+    border-radius: 5px;
+    background: none;
+}
+
+/*---------------------------------------SECTION CONTACTS END--------------------------------------------------------*/
 
 
 /*---------------------------------------MAIN END---------------------------------------------------------------------*/
