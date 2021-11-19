@@ -831,10 +831,11 @@ html, body {
 .subscribe-body {
     background-color: #17213C;
     display: flex;
+    border-radius: 5px;
 }
 
-.subscriber-content{
-    position: relative;
+.subscriber-content {
+    /*position: relative;*/
     display: flex;
     padding: 30px 50px;
     flex: 0 1 100%;
@@ -853,33 +854,34 @@ html, body {
     padding-right: 180px;
 }
 
-.subscriber-data-input{
+/*form*/
+.subscriber-data-input {
     display: flex;
     flex: 0 1 50%;
-    position: absolute;
-    right: 50px;
-    top: 30px;
-    /*bottom: 30px;*/
+    width: 100%;
+    justify-content: right;
+    align-items: center;
 }
 
-.subscriber-data-input input{
-    width: 333px;
-    height: 58px;
+.subscriber-data-input input {
+    width: 100%;
+    padding: 0 20px;
+    min-height: 58px;
+    flex: 1 1 auto;
     background-color: #F9F9F9;
     border: 1px solid #E6E6E6;
     border-radius: 5px 0 0 5px;
-    /*font-style: normal;*/
-    /*font-weight: 400;*/
-    /*font-size: 14px;*/
-    /*line-height: 200%;*/
-    /*letter-spacing: 0.2px;*/
-    /*color: #737373;*/
-    text-indent: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: 0.2px;
+    color: #737373;
 }
 
 .subscriber-data-input button {
-    width: 117px;
-    height: 58px;
+    padding: 0 20px;
+    min-height: 58px;
     border-radius: 0 5px 5px 0;
     background: #FF7B47;
     color: #FFFFFF;
@@ -891,9 +893,66 @@ html, body {
     letter-spacing: 0.2px;
 }
 
-    /*---------------------------------------SECTION SUBSCRIBE END--------------------------------------------------------*/
-    /*---------------------------------------MAIN END---------------------------------------------------------------------*/
-    /*---------------------------------------FOOTER START-----------------------------------------------------------------*/
+@media (max-width: 972px) {
+    .subscribe-title {
+        padding-right: 0;
+    }
+
+    .subscribe-title {
+        flex: 0 1 40%;
+    }
+
+    .subscriber-data-input {
+        flex: 0 1 60%
+    }
+}
+
+@media (max-width: 751px) {
+    .subscriber-content {
+        flex-direction: column;
+    }
+
+    .subscribe-title {
+        padding: 0 0 10px 0;
+        text-align: center;
+    }
+
+    .subscriber-content {
+        padding: 20px 20px;
+    }
+
+    .subscriber-data-input input {
+        min-height: 43px;
+    }
+
+    .subscriber-data-input button {
+        min-height: 43px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .subscriber-data-input {
+        flex-direction: column;
+    }
+
+    .subscriber-data-input input{
+        border-radius: 5px;
+        margin-bottom:5px;
+    }
+
+    .subscriber-data-input button{
+        border-radius: 7px;
+        width: 100%;
+    }
+}
+
+/*---------------------------------------SECTION SUBSCRIBE END--------------------------------------------------------*/
+
+
+/*---------------------------------------MAIN END---------------------------------------------------------------------*/
+
+/*---------------------------------------FOOTER START-----------------------------------------------------------------*/
 .footer {
 
 }
