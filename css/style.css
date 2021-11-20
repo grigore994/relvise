@@ -982,11 +982,33 @@ html, body {
     background-color: #FFFFFF;
     align-items: center;
     margin: 0 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
 }
 
-/*.contacts-list-item:hover{*/
-/*    background-color: #252B42;*/
-/*}*/
+.contacts-list-item:hover {
+    transform: scale(1.2);
+    background-color: #252B42;
+}
+
+.contacts-list-item:hover .contacts-list-item-icon {
+    color: #FFFFFF;
+}
+
+.contacts-list-item:hover .contacts-list-item-info {
+    color: #FFFFFF;
+}
+
+
+.contacts-list-item:hover .contacts-list-item-text {
+    color: #FFFFFF;
+
+}
+
+.contacts-list-item:hover .contacts-list-item-button {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
 
 .contacts-list-item-icon {
     margin: 50px 0 15px 0;
@@ -994,10 +1016,6 @@ html, body {
     color: #0D5C63;
     /*background: #FFFFFF;*/
 }
-
-/*.contacts-list-item-icon:hover {*/
-/*    color: #FFFFFF;*/
-/*}*/
 
 .contacts-list-item-info {
     margin-bottom: 15px;
@@ -1034,8 +1052,29 @@ html, body {
     border: 1px solid #FF7B47;
     border-radius: 5px;
     background: none;
+    cursor: pointer;
 }
 
+@media (max-width: 920px) {
+    .contacts-list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts-list-item {
+        padding: 0 20px;
+        margin: 10px 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .contacts-list {
+        margin: 30px 0 0 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
 /*---------------------------------------SECTION CONTACTS END--------------------------------------------------------*/
 
 
