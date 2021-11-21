@@ -1064,9 +1064,10 @@ html, body {
 }
 
 @media (max-width: 920px) {
-    .contacts{
+    .contacts {
         padding: 60px 0 50px 0;
     }
+
     .contacts-list {
         flex-wrap: wrap;
         align-items: center;
@@ -1133,8 +1134,8 @@ html, body {
     /*margin-right: 14px;*/
 }
 
-.contact-us-button button{
-    height:58px;
+.contact-us-button button {
+    height: 58px;
     padding: 15px 40px;
     font-style: normal;
     font-weight: bold;
@@ -1148,9 +1149,9 @@ html, body {
     cursor: pointer;
 }
 
-@media (max-width:920px) {
-    .contact-us-content{
-        padding:0 0 0 40px
+@media (max-width: 920px) {
+    .contact-us-content {
+        padding: 0 0 0 40px
         /*display: flex;*/
         /*flex-direction: column;*/
         /*justify-content: center;*/
@@ -1158,14 +1159,14 @@ html, body {
     }
 }
 
-@media (max-width:830px) {
-    .contact-us-button button{
+@media (max-width: 830px) {
+    .contact-us-button button {
         padding: 15px 30px;
     }
 }
 
-@media (max-width:720px) {
-    .contact-us-body{
+@media (max-width: 720px) {
+    .contact-us-body {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1173,19 +1174,20 @@ html, body {
         text-align: center;
     }
 
-    .contact-us-content{
+    .contact-us-content {
         padding: 0;
         margin: 0 0 20px 0;
     }
 
-    .contact-us-button  {
+    .contact-us-button {
         width: auto
     }
 
     .contact-us-button button {
         width: auto;
     }
-    }
+}
+
 /*---------------------------------------SECTION CONTACT US END--------------------------------------------------------*/
 
 
