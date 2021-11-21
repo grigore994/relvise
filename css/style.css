@@ -191,6 +191,10 @@ html, body {
     background-color: white;
 }
 
+.page-footer {
+    background-color: #17213C;;
+}
+
 /*---------------------------------------PAGE END---------------------------------------------------------------------*/
 
 
@@ -1091,7 +1095,7 @@ html, body {
 
 /*---------------------------------------SECTION CONTACTS END--------------------------------------------------------*/
 
-/*---------------------------------------SECTION CONTACT US START--------------------------------------------------------*/
+/*---------------------------------------SECTION CONTACT US START-----------------------------------------------------*/
 .contact-us {
     padding: 40px 0;
 }
@@ -1178,24 +1182,74 @@ html, body {
         padding: 0;
         margin: 0 0 20px 0;
     }
-
-    .contact-us-button {
-        width: auto
-    }
-
-    .contact-us-button button {
-        width: auto;
-    }
 }
 
-/*---------------------------------------SECTION CONTACT US END--------------------------------------------------------*/
-
-
-/*---------------------------------------MAIN END---------------------------------------------------------------------*/
+/*---------------------------------------SECTION CONTACT US END-------------------------------------------------------*/
+/*----------------------------------------------MAIN END--------------------------------------------------------------*/
 
 /*---------------------------------------FOOTER START-----------------------------------------------------------------*/
 .footer {
-
 }
 
+.footer-container {
+}
+
+.footer-body {
+    padding: 50px 0;
+}
+
+.footer-items-list {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+}
+
+.footer-list-item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0 10px;
+}
+
+.footer-list-item-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    /*color: #FFFFFF;*/
+    margin: 0 0 20px 0;
+}
+
+.footer-list-item-link {
+    color: #FFFFFF;
+    margin: 0 0 10px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.footer-list-item-link-with-icon{
+    margin-bottom: 10px;
+}
+
+.footer-list-item-link-with-icon i {
+    color: #8EC2F2;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+@media (max-width: 940px) {
+    .footer-items-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footer-list-item{
+        padding: 25px 25px;
+    }
+}
 /*---------------------------------------FOOTER END-------------------------------------------------------------------*/
