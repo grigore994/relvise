@@ -187,6 +187,10 @@ html, body {
 
 }
 
+.page-contact-us {
+    background-color: white;
+}
+
 /*---------------------------------------PAGE END---------------------------------------------------------------------*/
 
 
@@ -1055,11 +1059,19 @@ html, body {
     cursor: pointer;
 }
 
+.contacts-list-item-button:hover {
+    background-color: #FF7B47;
+}
+
 @media (max-width: 920px) {
+    .contacts{
+        padding: 60px 0 50px 0;
+    }
     .contacts-list {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        margin: 50px 30px 0 30px;
     }
 
     .contacts-list-item {
@@ -1075,7 +1087,106 @@ html, body {
         flex-wrap: nowrap;
     }
 }
+
 /*---------------------------------------SECTION CONTACTS END--------------------------------------------------------*/
+
+/*---------------------------------------SECTION CONTACT US START--------------------------------------------------------*/
+.contact-us {
+    padding: 40px 0;
+}
+
+.contact-us-container {
+}
+
+.contact-us-body {
+    display: flex;
+}
+
+.contact-us-content {
+    flex: 0 1 80%;
+}
+
+.contact-us-content-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-bottom: 10px;
+}
+
+.contact-us-content-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.contact-us-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 1 20%;
+    /*margin-right: 14px;*/
+}
+
+.contact-us-button button{
+    height:58px;
+    padding: 15px 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background-color: #FF7B47;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:920px) {
+    .contact-us-content{
+        padding:0 0 0 40px
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: center;*/
+        /*align-items: center*/
+    }
+}
+
+@media (max-width:830px) {
+    .contact-us-button button{
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width:720px) {
+    .contact-us-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-us-content{
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+
+    .contact-us-button  {
+        width: auto
+    }
+
+    .contact-us-button button {
+        width: auto;
+    }
+    }
+/*---------------------------------------SECTION CONTACT US END--------------------------------------------------------*/
 
 
 /*---------------------------------------MAIN END---------------------------------------------------------------------*/
